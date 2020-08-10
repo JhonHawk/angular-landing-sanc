@@ -1,3 +1,12 @@
-<div fxLayout="row" fxLayoutAlign="end center">
-    
+<div [fxLayout]="'row'" [fxLayoutAlign]="'end center'" class="navbar">
+  <button
+    *ngFor="let item of items"
+    mat-raised-button
+    class="init"
+    color="primary"
+    [ngStyle]="{ 'background-color': item.color }"
+  >
+    <mat-icon class="ml-2">{{item.icon}}</mat-icon>
+    {{item.title}}
+  </button>
 </div>

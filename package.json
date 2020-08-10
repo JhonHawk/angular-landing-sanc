@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-prod": "ng build --prod --base-href=/ --deploy-url=/ --build-optimizer"
+    "build-prod": "ng build --prod --base-href=./ --build-optimizer"
   },
   "private": true,
   "dependencies": {
@@ -19,6 +19,7 @@
     "@angular/core": "~10.0.6",
     "@angular/flex-layout": "^10.0.0-beta.32",
     "@angular/forms": "~10.0.6",
+    "@angular/material": "^10.1.2",
     "@angular/platform-browser": "~10.0.6",
     "@angular/platform-browser-dynamic": "~10.0.6",
     "@angular/router": "~10.0.6",

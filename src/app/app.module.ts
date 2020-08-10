@@ -6,6 +6,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { IntroComponent } from './pages/intro/intro.component';
 import { CoreModule } from './core/core.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PathLocationStrategy, LocationStrategy } from '@angular/common';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,9 +18,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     BrowserModule,
     AppRoutingModule,
     CoreModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: PathLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

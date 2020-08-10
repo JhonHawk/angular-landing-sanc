@@ -1,0 +1,24 @@
+.navbar {
+  padding: 35px;
+}
+
+.mat-button-base {
+  border-radius: 24px !important;
+  &.btn {
+    height: 52px !important;
+
+    .mat-icon {
+      position: relative;
+      top: -1px;
+      margin-right: 5px !important;
+    }
+  }
+}
+
+.ml-2 {
+    margin-right: 5px !important;
+}
+
+.init{
+    margin-right: 15px !important; 
+}
